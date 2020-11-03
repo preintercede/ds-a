@@ -1,3 +1,12 @@
+# def isUnique(string):
+#     letters = {}
+#     for letter in string:
+#         if letter in letters:
+#             return False
+#         letters[letter] = True
+#     return True
+
+
 def isUnique(string):
     letters = {}
     for letter in string:
