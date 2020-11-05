@@ -11,4 +11,4 @@ def gcd(a, b):
         return gcd(b, a % b)
 
 
-print(gcd(48, -108))
+print(gcd(48, 18))
