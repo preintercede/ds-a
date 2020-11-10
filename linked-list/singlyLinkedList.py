@@ -42,16 +42,25 @@ class SinglyLinkedList:
                 tempNode.next = newNode
                 newNode.next = nextNode
 
+    # traverse a linked list
+    def traverseSLL(self):
+        if self.head is None:  # O(1)
+            print("This linked list does not exist")
+        else:
+            node = self.head  # O(1)
+            while node is not None:  # O(n)
+                print(node.value)
+                node = node.next
 
 # Time complexity of creating a singly linked list is O(1)
 # Space complexity also O(1)
+
 
 singlyLinkedList = SinglyLinkedList()
 singlyLinkedList.insertSLL(1, 1)
 singlyLinkedList.insertSLL(2, 1)
 singlyLinkedList.insertSLL(3, 1)
 singlyLinkedList.insertSLL(4, 1)
-
 
 # add to beginning of LL
 singlyLinkedList.insertSLL(5, 0)
@@ -62,8 +71,10 @@ singlyLinkedList.insertSLL(7, 3)
 # add to end of LL
 singlyLinkedList.insertSLL(10, 1)
 
-
 print([node.value for node in singlyLinkedList])
+
+# traverse the LL
+singlyLinkedList.traverseSLL()
 
 ''' creation of singly linked list
 # node1= Node(1)
