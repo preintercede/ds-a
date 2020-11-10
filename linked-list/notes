@@ -18,6 +18,9 @@ Types of linked lists
         After node in middle of linked list
         At the end of the linked list
 
+        Create the node and assign the value
+        If head=none, head=node tail=node
+        Else: location = first
 - Circular Singly Linked List 
 
 - Doubly Linked List
