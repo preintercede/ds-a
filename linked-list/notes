@@ -9,6 +9,14 @@ Compared to arrays:
 
 Types of linked lists
 - Singly Linked List
+    Create head and tail; initialize with null
+    Create blank node and assign a value to it and reference it as null
+    Link head and tail with the nodes
+
+    Insertion:
+        At the beginning of linked list
+        After node in middle of linked list
+        At the end of the linked list
 
 - Circular Singly Linked List 
 
