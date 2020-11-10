@@ -1,1 +1,17 @@
-need a head to know where the linked list starts
+Need a head to know where the linked list starts
+
+Compared to arrays:
+- Elements of linked lists are independent objects
+- Size of a linked list is not predefined
+- Insertions and removals for very efficient
+- Accessing an element is efficient in arrays since you can just access the element if you know where it is
+- For linked lists, you have to iterate over the list
+
+Types of linked lists
+- Singly Linked List
+
+- Circular Singly Linked List 
+
+- Doubly Linked List
+
+- Circular Doubly Linked List
