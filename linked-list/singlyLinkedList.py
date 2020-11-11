@@ -99,6 +99,14 @@ class SinglyLinkedList:
                 nextNode = tempNode.next
                 tempNode.next = nextNode.next
 
+    # delete entire linked list
+    def deleteEntireSLL(self):
+        if self.head is None:  # O(1)
+            print('This linked list does not exist')
+        else:
+            self.head = None  # O(1)
+            self.tail = None
+
 # Time complexity of creating a singly linked list is O(1)
 # Space complexity also O(1)
 
@@ -129,6 +137,10 @@ print(singlyLinkedList.searchSLL(55))
 
 # delete node
 singlyLinkedList.deleteNode(3)  # deletes 7
+print([node.value for node in singlyLinkedList])
+
+# delete entire list
+singlyLinkedList.deleteEntireSLL()
 print([node.value for node in singlyLinkedList])
 
 ''' creation of singly linked list
