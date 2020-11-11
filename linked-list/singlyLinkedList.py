@@ -52,6 +52,18 @@ class SinglyLinkedList:
                 print(node.value)
                 node = node.next
 
+    # search for node in linked list
+    def searchSLL(self, nodeValue):
+        if self.head is None:
+            print("This linked list does not exist")  # O(1)
+        else:
+            node = self.head  # O(1)
+            while node is not None:  # O(n)
+                if node.value == nodeValue:  # O(1)
+                    return node.value
+                node = node.next
+            return "Value doesn't exist in this list."
+
 # Time complexity of creating a singly linked list is O(1)
 # Space complexity also O(1)
 
@@ -75,6 +87,10 @@ print([node.value for node in singlyLinkedList])
 
 # traverse the LL
 singlyLinkedList.traverseSLL()
+
+# search LL
+print(singlyLinkedList.searchSLL(5))
+print(singlyLinkedList.searchSLL(55))
 
 ''' creation of singly linked list
 # node1= Node(1)
