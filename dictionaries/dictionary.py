@@ -12,3 +12,12 @@ def traverseDict(dict):
 
 
 # traverseDict(newDict)
+
+def searchDict(dict, value):
+    for key in dict:  # O(n)
+        if dict[key] == value:
+            return key, value
+    return 'Value does not exist'
+
+
+# print(searchDict(newDict, 'Los Angeles'))
