@@ -30,3 +30,23 @@ class Solution:
                 if nums[i] == nums[j] and i < j:
                     numPairs += 1
         return numPairs
+
+
+# dictionary method
+
+'''
+Store the values in a dictionary and if it's seen, numPairs +=1 
+'''
+
+
+class Solution:
+    def numIdenticalPairs(self, nums: List[int]) -> int:
+        seen = {}
+        numPairs = 0
+        for i in nums:
+            if i in seen:
+                numPairs += seen[i]
+                seen[i] += 1
+            else:
+                seen[i] = 1
+        return numPairs
