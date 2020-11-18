@@ -20,4 +20,10 @@ def searchTuple(pTuple, value):
     return 'Value not found in the tuple'
 
 
-print(searchTuple(newTuple, 'b'))
+# print(searchTuple(newTuple, 'b'))
+
+
+myTuple = (1, 4, 3, 2, 5)
+myTuple1 = (1, 2, 6, 9, 8, 7)
+
+print(myTuple.index(4))
